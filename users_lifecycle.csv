@@ -1,0 +1,4 @@
+﻿username,group,policy,department,status
+alice.hr,HR-ReadOnly,s3-readonly,HR,active
+bob.dev,Security-AWS,security-audit,Security,active
+carol.sec,N/A,N/A,Security,inactive
