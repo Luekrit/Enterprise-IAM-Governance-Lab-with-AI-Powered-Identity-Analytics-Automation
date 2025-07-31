@@ -1,4 +1,0 @@
-﻿username,group ,policy,department
-alice.hr,HR-ReadOnly,s3-readonly,HR
-bob.dev,Developers-AWS,ec2-admin,Development
-carol.sec,Security-AWS,security-audit,Security
