@@ -68,6 +68,10 @@ In this phase, we manually provision IAM users via the AWS Console to understand
    - Log in via AWS Console with `alice.hr`
    - Try browsing S3 buckets  
    - ✅ Confirm read-only access (no upload/delete)
+  
+![Alice.hr](screenshoot/Alice.hr.png)
+
+![test.alice.permission](screenshoot/Testing-Alice.hr-permission.png)
 
 ---
 
@@ -109,9 +113,16 @@ Provision a developer user with EC2 access.
      - Tag: `Department=Dev`
    - Click **Create User**
 
-#### ✅ Test Bob’s Access (CLI)
+![bob-dev](screenshoot/bob-dev-summary.png)
+
+![bob-dev](screenshoot/bob-dev-group.png)
+
+#### ✅ Test Bob’s Access (CLI) optional
 
 aws ec2 describe-instances
+
+
+
 
 ---
 
