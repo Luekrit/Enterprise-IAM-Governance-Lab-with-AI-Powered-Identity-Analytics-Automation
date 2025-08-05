@@ -1,0 +1,14 @@
+## 🧩 Phase 0: Project Setup (Before You Begin)
+
+### ✅ Prerequisites to Install/Setup
+
+| Tool                       | Purpose                                | How to Get It                                                                 |
+|---------------------------|----------------------------------------|-------------------------------------------------------------------------------|
+| **AWS Free Tier**         | For IAM, SSO, CloudTrail               | [Create an AWS Account](https://aws.amazon.com/free/)                         |
+| **Microsoft Entra ID**    | Identity governance simulation         | [Join Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program) |
+| **Visual Studio Code**    | Code editing, Git, Python              | [Download VS Code](https://code.visualstudio.com/)                            |
+| **Git**                   | Version control + GitHub push          | [Install Git](https://git-scm.com/)                                           |
+| **Python 3.10+**          | AI & automation scripting              | [Install Python](https://www.python.org/downloads/)                           |
+| **Jupyter / Google Colab**| AI Notebooks (Optional)                | [Open Google Colab](https://colab.research.google.com/)                       |
+| **GitHub Repository**     | Showcase project online                | [Create a GitHub Repo](https://github.com/new)                                |
+
