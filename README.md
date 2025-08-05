@@ -24,7 +24,7 @@ Built using:
 
 ## 📂 Phases
 
-### **Phase 1 – Manual Joiner Setup**
+### **Phase 1 – Manual Identity Lifecycle Simulation (Joiner – Mover – Leaver)**
 - Provision IAM users manually via AWS Console
 - Apply tags (`Department=HR`) and assign custom policies
 - Use this to document and understand the IAM flow before automation
