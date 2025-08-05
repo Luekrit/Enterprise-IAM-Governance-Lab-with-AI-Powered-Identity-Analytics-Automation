@@ -161,3 +161,5 @@ Provision a security analyst with read-only access to IAM, CloudTrail, logs, and
      - Group: `Security-AWS`
      - Tag: `Department=Security`
    - Click **Create User**
+
+![carol-summary](screenshoot/Carol-summary.png)
