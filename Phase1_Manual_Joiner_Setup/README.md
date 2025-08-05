@@ -38,7 +38,7 @@ In this phase, we manually provision IAM users via the AWS Console to understand
 
    - Click **Create group**  
    - Group Name: `HR-ReadOnly`  
-   - Attach Policy: `AmazonS3ReadOnlyAccess`  
+   - Attach Policy: `AmazonS3ReadOnlyAccess` or `S3-ReadOnlyAccess`
    - Click **Create group**  
    - Select the group and proceed
 
@@ -54,7 +54,7 @@ In this phase, we manually provision IAM users via the AWS Console to understand
 
    - Username: `alice.hr`  
    - Group: `HR-ReadOnly`  
-   - Policy: `AmazonS3ReadOnlyAccess`  
+   - Policy: `AmazonS3ReadOnlyAccess` or `S3-ReadOnlyAccess`
    - Tag: `Department=HR`  
    → Click **Create User**
 
@@ -140,7 +140,7 @@ Provision a security analyst with read-only access to IAM, CloudTrail, logs, and
    - ☑ Require password reset
 5. **Create Group** (if not already created):
    - Group name: `Security-AWS`
-   - Attach custom policy: `security-audit.json` (stored in `/policies/security-audit.json`)
+   - Attach custom policy: `security-audit.json`
 6. **Add Tag**  
    - Key: `Department`  
    - Value: `Security`
