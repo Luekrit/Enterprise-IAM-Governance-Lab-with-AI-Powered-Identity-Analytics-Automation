@@ -5,7 +5,7 @@
 | Tool                       | Purpose                                | How to Get It                                                                 |
 |---------------------------|----------------------------------------|-------------------------------------------------------------------------------|
 | **AWS Free Tier**         | For IAM, SSO, CloudTrail               | [Create an AWS Account](https://aws.amazon.com/free/)                         |
-| **Microsoft Entra ID**    | Identity governance simulation         | [Join Microsoft 365 Developer Program]([https://developer.microsoft.com/en-us/microsoft-365/dev-program](https://www.microsoft.com/en-au/security/business/identity-access/microsoft-entra-id)) |
+| **Microsoft Entra ID**    | Identity governance simulation         | [Create Microsoft Entra ID](https://www.microsoft.com/en-au/security/business/identity-access/microsoft-entra-id) |
 | **Visual Studio Code**    | Code editing, Git, Python              | [Download VS Code](https://code.visualstudio.com/)                            |
 | **Git**                   | Version control + GitHub push          | [Install Git](https://git-scm.com/)                                           |
 | **Python 3.10+**          | AI & automation scripting              | [Install Python](https://www.python.org/downloads/)                           |
