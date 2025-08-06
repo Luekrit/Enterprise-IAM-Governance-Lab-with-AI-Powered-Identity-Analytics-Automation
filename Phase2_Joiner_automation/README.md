@@ -12,13 +12,13 @@ This script simulates how enterprise environments automate identity creation, gr
 
 ### 📁 Files Used
 
-- `users.csv`  
+- `joiner.csv`  
   Stores user metadata for bulk provisioning.
 
 
 - `test_import.py`
 
-- `provision_users.py` 
+- `joiner.py` 
 
 ### 🧩 Python Scripts Overview
 
@@ -31,7 +31,7 @@ A pre-check script used **before** provisioning to ensure your CSV file is valid
 - Warns if any values are missing or malformed
 - Prevents provisioning failures by catching errors early
 
-🔍 **Run this first** to validate your data before using `provision_users.py`.
+🔍 **Run this first** to validate your data before using `joiner.py`.
 
 ---
 
@@ -62,7 +62,7 @@ The main automation script that handles IAM user creation based on the CSV file.
 ---
  ### 🚀 How to Run (Step-by-Step)
 1. ✅ **Prepare the Data**  
-   Ensure your `users.csv` is accurate and saved in the Phase 2 folder.
+   Ensure your `joiner.csv` is accurate and saved in the Phase 2 folder.
 
 2. **Make sure you have Boto3 and AWS CLI credentials configured (with IAM permissions)**
     ```bash
@@ -82,7 +82,7 @@ Enter:
 5. **once test_import.py passed, run provision_users**
 
    ```bash
-   python provision_users.py
+   python Joiner.py
 ![run test_import](screenshot/python%20test_import.png)
 
 ![run provision_users](screenshot/run-provision_users.py.png)
@@ -93,7 +93,7 @@ Enter:
 
 - ✅ Always run `test_import.py` before provisioning to avoid script crashes.
 - 🚫 Never run on production AWS accounts — use a sandbox or testing environment.
-- 🛠 Ensure IAM groups and policies exist **before** executing `provision_users.py`.
+- 🛠 Ensure IAM groups and policies exist **before** executing `joiner.py`.
 - 🧩 You can extend the automation to:
   - Create login profiles (for console access)
   - Generate access keys and securely deliver to users
