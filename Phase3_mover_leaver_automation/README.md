@@ -56,3 +56,11 @@ Simulate offboarding securely
 4. 🖥 Verify in AWS Console
   - IAM > Users: Check group memberships and access keys
   - Confirm expected changes match the CSV file actions
+
+---
+
+### 🧠 Best Practices Simulated
+  - ✅ Least Privilege: Access changes reflect new responsibilities
+  - 🔐 Secure Offboarding: All access revoked immediately upon departure
+  - 📁 Auditable Actions: Logs can be stored or sent to a central SIEM
+  - 🔁 Repeatable & Scalable: Supports batch changes for larger orgs
