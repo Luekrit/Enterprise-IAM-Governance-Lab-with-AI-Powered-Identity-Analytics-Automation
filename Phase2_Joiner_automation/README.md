@@ -60,6 +60,7 @@ The main automation script that handles IAM user creation based on the CSV file.
 | bob.dev    | Developers-AWS | DevPolicy  | FullName, Department    | ✅ Provisioned    |
 | carol.sec  | Security-AWS   | SecPolicy  | FullName, Department    | ✅ Provisioned    |
 
+![user](screenshot/users.png)
 ---
 
 ### 🧠 Pro Tips
