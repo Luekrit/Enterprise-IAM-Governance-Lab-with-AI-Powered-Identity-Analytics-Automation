@@ -74,7 +74,7 @@ The main automation script that handles IAM user creation based on the CSV file.
 
 ---
 
-### ✅ Phase 2 Outcome
+### Phase 2 Outcome
 
 IAM user onboarding is now **automated** with validation and clean provisioning flow using **Python + Boto3**.  
 This simulates a real-world **Joiner process** in enterprise IAM Governance — enabling repeatable, secure, and scalable identity creation.
