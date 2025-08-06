@@ -33,8 +33,6 @@ A pre-check script used **before** provisioning to ensure your CSV file is valid
 
 🔍 **Run this first** to validate your data before using `provision_users.py`.
 
-![run test_import](screenshot/python%20test_import.png)
-
 ---
 
 #### ⚙️ `provision_users.py`  
@@ -48,7 +46,6 @@ The main automation script that handles IAM user creation based on the CSV file.
 
 🛡 This script simulates an automated **Joiner** workflow, aligning with IAM governance best practices.
 
-![run provision_users](screenshot/run-provision_users.py.png)
 
 ---
 
@@ -61,6 +58,25 @@ The main automation script that handles IAM user creation based on the CSV file.
 | carol.sec  | Security-AWS   | SecPolicy  | FullName, Department    | ✅ Provisioned    |
 
 ![user](screenshot/users.png)
+
+---
+ ### 🚀 How to Run (Step-by-Step)
+1. ✅ **Prepare the Data**  
+   Ensure your `users.csv` is accurate and saved in the Phase 2 folder.
+
+2. **Make sure you have Boto3 and AWS CLI credentials configured (with IAM permissions)**
+3. ▶️ **Run test Script for CSV**
+
+   ```bash
+   python test_import.py
+4. **once test_import.py passed, run provision_users**
+
+   ```bash
+   python provision_users.py
+![run test_import](screenshot/python%20test_import.png)
+
+![run provision_users](screenshot/run-provision_users.py.png)
+
 ---
 
 ### 🧠 Pro Tips
