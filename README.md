@@ -1,6 +1,6 @@
-# 🛡️ Enterprise IAM Governance Lab with AI-Powered Identity Analytics & Automation
+# 🛡️ Enterprise IAM Governance Lab with AI-Powered Identity Analytics & Automation (Unfinished)
 
-This project simulates enterprise-grade **Identity and Access Management (IAM)** governance across multiple phases, combining **lifecycle orchestration**, **access automation**, and **AI-based anomaly detection**. Designed for cloud and security engineering portfolios, it replicates what happens in a real-world Joiner-Mover-Leaver (JML) environment.
+This project simulates enterprise-grade **Identity and Access Management (IAM)** governance across multiple phases, combining **lifecycle orchestration**, **access automation**, and **AI-based anomaly detection**. Designed for cloud and security engineering portfolios, it replicates a real-world Joiner-Mover-Leaver (JML) environment.
 
 ---
 
@@ -57,5 +57,4 @@ username,group,policy,department
 alice.hr,HR-ReadOnly,s3-readonly,HR
 bob.dev,Developers-AWS,ec2-admin,Development
 carol.sec,Security-AWS,security-audit,Security
-
-
+```
