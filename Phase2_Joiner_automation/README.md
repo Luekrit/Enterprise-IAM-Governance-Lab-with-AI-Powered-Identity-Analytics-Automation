@@ -33,6 +33,8 @@ A pre-check script used **before** provisioning to ensure your CSV file is valid
 
 🔍 **Run this first** to validate your data before using `provision_users.py`.
 
+![run test_import](screenshot/python%20test_import.png)
+
 ---
 
 #### ⚙️ `provision_users.py`  
@@ -45,6 +47,8 @@ The main automation script that handles IAM user creation based on the CSV file.
 - Tags users with metadata like `FullName` and `Department` (`iam.tag_user`)
 
 🛡 This script simulates an automated **Joiner** workflow, aligning with IAM governance best practices.
+
+![run provision_users](screenshot/run-provision_users.py.png)
 
 ---
 
