@@ -48,7 +48,7 @@ Simulate offboarding securely
 2. ▶️ **Run the Automation Script**
 
    ```bash
-   python process_mover_leaver.py
+   python mover_leaver.py
 3. 📋 Actions Performed
   - Movers: Group and policy reassignment
   - Leavers: Access revocation and optional deletion
@@ -70,3 +70,4 @@ Simulate offboarding securely
 ### Phase 3 Outcome
 We’ve successfully automated the Mover and Leaver identity lifecycle stages in AWS IAM.
 This ensures consistent, secure, and auditable access management aligned with enterprise IAM governance practices.
+
