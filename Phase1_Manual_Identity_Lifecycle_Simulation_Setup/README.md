@@ -69,9 +69,9 @@ In this phase, we manually provision IAM users via the AWS Console to understand
    - Try browsing S3 buckets  
    - ✅ Confirm read-only access (no upload/delete)
   
-![Alice.hr](screenshoot/Alice.hr.png)
+![Alice.hr](screenshot/Alice.hr.png)
 
-![test.alice.permission](screenshoot/Testing-Alice.hr-permission.png)
+![test.alice.permission](screenshot/Testing-Alice.hr-permission.png)
 
 ---
 
@@ -113,9 +113,9 @@ Provision a developer user with EC2 access.
      - Tag: `Department=Dev`
    - Click **Create User**
 
-![bob-dev](screenshoot/bob-dev-summary.png)
+![bob-dev](screenshot/bob-dev-summary.png)
 
-![bob-dev](screenshoot/bob-dev-group.png)
+![bob-dev](screenshot/bob-dev-group.png)
 
 #### ✅ Test Bob’s Access (CLI) optional
 
@@ -162,4 +162,5 @@ Provision a security analyst with read-only access to IAM, CloudTrail, logs, and
      - Tag: `Department=Security`
    - Click **Create User**
 
-![carol-summary](screenshoot/Carol-summary.png)
+![carol-summary](screenshot/Carol-summary.png)
+
