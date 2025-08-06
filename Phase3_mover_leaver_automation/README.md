@@ -64,3 +64,9 @@ Simulate offboarding securely
   - 🔐 Secure Offboarding: All access revoked immediately upon departure
   - 📁 Auditable Actions: Logs can be stored or sent to a central SIEM
   - 🔁 Repeatable & Scalable: Supports batch changes for larger orgs
+
+---
+
+### Phase 3 Outcome
+We’ve successfully automated the Mover and Leaver identity lifecycle stages in AWS IAM.
+This ensures consistent, secure, and auditable access management aligned with enterprise IAM governance practices.
