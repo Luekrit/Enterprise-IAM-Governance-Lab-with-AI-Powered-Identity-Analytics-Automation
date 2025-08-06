@@ -123,7 +123,6 @@ aws ec2 describe-instances
 
 
 
-
 ---
 
 ### 🛡️ Step-by-Step: Create `carol.sec` – Security Analyst
@@ -164,3 +163,66 @@ Provision a security analyst with read-only access to IAM, CloudTrail, logs, and
 
 ![carol-summary](screenshot/Carol-summary.png)
 
+## 🔄 Phase 1B: Simulate Mover & Leaver in AWS IAM
+
+---
+
+### 🔁 MOVER: Bob changes roles (Dev → Security Analyst)
+
+👨‍💻 **Scenario**:  
+Bob was a Developer, but is now transferring to the Security team. We need to:
+- Remove him from `Developers-AWS` group  
+- Add him to `Security-AWS` group  
+- *(Optional)* Rotate his credentials or trigger reauthorization  
+
+---
+
+#### ✅ Step-by-Step: Bob's Role Change
+
+1. Go to **IAM > Users > bob.dev**
+2. Click **Groups** → Remove from `Developers-AWS`  
+   - Click the ✖️ next to `Developers-AWS` to remove him  
+3. Click **Add user to groups**  
+   - Select or create `Security-AWS`  
+   - Click **Add to groups**  
+4. *(Optional for realism)*:  
+   - Rotate Bob’s access keys (delete old + create new)  
+   - Require Bob to reset his password again  
+
+✅ **Bob now has access equivalent to a Security Analyst instead of Developer.**
+
+---
+
+### 🧹 LEAVER: Carol leaves the organization
+
+👩‍💼 **Scenario**:  
+Carol (Security Analyst) is leaving the company. We need to:
+- Block her sign-in  
+- Revoke programmatic and console access  
+- Optionally delete her user record  
+
+---
+
+#### ✅ Step-by-Step: Carol Offboarding
+
+1. Go to **IAM > Users > carol.sec**
+2. In **Security credentials** tab:  
+   - Under **Console access**, click “**Make inactive**”  
+   - Under **Access keys**, click “**Deactivate**” (or **Delete** if preferred)  
+3. Remove Carol from all groups:  
+   - Click **Groups**  
+   - Remove from `Security-AWS`  
+4. *(Optional for full cleanup)*:  
+   - Click **Delete user** (if fully terminated)  
+
+💡 *In real orgs, you'd keep her record for 30–90 days in a disabled state for auditing.*  
+✅ **Carol now has no access, and her identity is decommissioned.**
+
+---
+
+### ✅ Results Summary
+
+| User       | Old Role         | Action Taken                         | Result                          |
+|------------|------------------|--------------------------------------|---------------------------------|
+| `bob.dev`  | Developer         | Moved to `Security-AWS` group        | Now acts as Security Analyst    |
+| `carol.sec`| Security Analyst  | Access revoked, optionally deleted   | No longer active in IAM         |
