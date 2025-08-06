@@ -190,8 +190,7 @@ Bob was a Developer, but is now transferring to the Security team. We need to:
 
 ✅ **Bob now has access equivalent to a Security Analyst instead of Developer.**
 
-![bob-to-security](screenshot
-/bob-to-security.png)
+![bob-to-security](screenshot/bob-to-security.png)
 
 ---
 
@@ -212,11 +211,9 @@ Carol (Security Analyst) is leaving the company. We need to:
    - Under **Console access**, click “**Make inactive**”  
    - Under **Access keys**, click “**Deactivate**” (or **Delete** if preferred)  
 
-![carol-console-removal](screenshot
-/remove-carol-console-access4.png)
+![carol-console-removal](screenshot/remove-carol-console-access4.png)
 
-![carol-access-removal](screenshot
-/deactivate-carol-access-key.png)
+![carol-access-removal](screenshot/deactivate-carol-access-key.png)
 
 3. Remove Carol from all groups:  
    - Click **Groups**  
