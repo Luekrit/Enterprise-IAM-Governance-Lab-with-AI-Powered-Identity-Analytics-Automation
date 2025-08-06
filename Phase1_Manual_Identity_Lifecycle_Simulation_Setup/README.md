@@ -73,6 +73,8 @@ In this phase, we manually provision IAM users via the AWS Console to understand
 
 ![test.alice.permission](screenshot/Testing-Alice.hr-permission.png)
 
+![alice.cli.test.access](screenshot/Alice-test-access.png)
+
 ---
 
 ### 👨‍💻 Step-by-Step: Create `bob.dev` – Cloud Developer
