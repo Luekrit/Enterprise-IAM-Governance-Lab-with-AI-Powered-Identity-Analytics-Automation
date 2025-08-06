@@ -52,5 +52,30 @@ The main automation script that handles IAM user creation based on the CSV file.
 
 ---
 
-📌 *Make sure to run `test_import.py` successfully before executing `provision_users.py`.*
+### 📊 Results Summary
+
+| Username   | Group          | Policy     | Tags Added             | Status          |
+|------------|----------------|------------|-------------------------|------------------|
+| alice.hr   | HR-AWS         | HRPolicy   | FullName, Department    | ✅ Provisioned    |
+| bob.dev    | Developers-AWS | DevPolicy  | FullName, Department    | ✅ Provisioned    |
+| carol.sec  | Security-AWS   | SecPolicy  | FullName, Department    | ✅ Provisioned    |
+
+---
+
+### 🧠 Pro Tips
+
+- ✅ Always run `test_import.py` before provisioning to avoid script crashes.
+- 🚫 Never run on production AWS accounts — use a sandbox or testing environment.
+- 🛠 Ensure IAM groups and policies exist **before** executing `provision_users.py`.
+- 🧩 You can extend the automation to:
+  - Create login profiles (for console access)
+  - Generate access keys and securely deliver to users
+  - Integrate with AWS Secrets Manager or other credential vaults
+
+---
+
+### ✅ Phase 2 Outcome
+
+IAM user onboarding is now **automated** with validation and clean provisioning flow using **Python + Boto3**.  
+This simulates a real-world **Joiner process** in enterprise IAM Governance — enabling repeatable, secure, and scalable identity creation.
 
