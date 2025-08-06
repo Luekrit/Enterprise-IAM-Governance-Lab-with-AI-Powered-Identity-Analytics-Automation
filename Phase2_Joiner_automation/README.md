@@ -65,11 +65,21 @@ The main automation script that handles IAM user creation based on the CSV file.
    Ensure your `users.csv` is accurate and saved in the Phase 2 folder.
 
 2. **Make sure you have Boto3 and AWS CLI credentials configured (with IAM permissions)**
-3. ▶️ **Run test Script for CSV**
+    ```bash
+    aws configure 
+Enter: 
+  - AWS Access Key ID
+  - AWS Secret Access Key
+  - Region (e.g., ap-southeast-2)
+  - Output format: json
+
+✅ This is how Python will authenticate to AWS.
+
+4. ▶️ **Run test Script for CSV**
 
    ```bash
    python test_import.py
-4. **once test_import.py passed, run provision_users**
+5. **once test_import.py passed, run provision_users**
 
    ```bash
    python provision_users.py
