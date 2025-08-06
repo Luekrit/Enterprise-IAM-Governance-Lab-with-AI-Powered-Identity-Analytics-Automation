@@ -5,7 +5,7 @@
 ### 🎯 Objective
 
 Automate the **Mover** and **Leaver** phases of the IAM lifecycle using Python and Boto3.  
-This phase simulates internal role changes (movers) and secure offboarding (leavers) — critical to access governance and risk reduction.
+This phase simulates internal role changes (movers) and secure offboarding (leavers), which are critical to access governance and risk reduction.
 
 ---
 
@@ -18,7 +18,7 @@ This phase simulates internal role changes (movers) and secure offboarding (leav
   Python script to:
   - Update user roles by changing group and policy assignments
   - Revoke access for leavers (disable sign-in, deactivate keys, remove from groups)
-  - (Optional) Delete user for complete offboarding
+  - (Optional) Delete the user for complete offboarding
 
 ---
 
@@ -26,7 +26,7 @@ This phase simulates internal role changes (movers) and secure offboarding (leav
 
 #### 🔁 MOVER  
 Simulate role transitions, e.g., Developer → Security Analyst  
-✔ Remove from old IAM group  
+✔ Remove from the old IAM group  
 ✔ Add to new IAM group  
 ✔ Update attached IAM policies (if needed)  
 ✔ Rotate credentials (optional)
@@ -66,8 +66,17 @@ Simulate offboarding securely
   - 🔁 Repeatable & Scalable: Supports batch changes for larger orgs
 
 ---
+### Enhance Features
+
+1. 📧 Email Notifications to Managers When Access is Revoked
+2. 🔄 Integration with HR System or Identity Feed
+3. ☁️ Store Access Logs in S3 or Push to CloudWatch/SIEM
+4. ⚠️ Flag Anomalies (e.g., Leaver Still Has Active Keys)
+
+---
 
 ### Phase 3 Outcome
 We’ve successfully automated the Mover and Leaver identity lifecycle stages in AWS IAM.
 This ensures consistent, secure, and auditable access management aligned with enterprise IAM governance practices.
+
 
