@@ -30,12 +30,12 @@ Built using:
 - Use this to document and understand the IAM flow before automation
 
 ### **Phase 2 – Joiner Automation with Python & Boto3**
-- Automatically provisions IAM users from `users.csv`
+- Automatically provisions IAM users from `joiner.csv`
 - Creates missing groups, attaches policies, applies tags
 - CLI-based onboarding simulation for Joiner lifecycle
 
 ### **Phase 3 – Mover & Leaver Lifecycle Automation**
-- Reads `users_lifecycle.csv` with user statuses
+- Reads `mover.csv` and `leaver.csv` with user statuses
 - Reassigns group and policy if user changes role (Mover)
 - Detaches and deletes users marked as `inactive` (Leaver)
 
@@ -51,7 +51,7 @@ Built using:
 
 ## 📥 Sample CSV Files
 
-### `users.csv` (Phase 2 – Joiner)
+### `joiner.csv` (Phase 2 – Joiner)
 ```csv
 username,group,policy,department
 alice.hr,HR-ReadOnly,s3-readonly,HR
